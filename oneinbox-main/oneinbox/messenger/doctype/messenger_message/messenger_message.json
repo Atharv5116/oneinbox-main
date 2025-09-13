@@ -1,0 +1,418 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{from}-{to}-{time}-{######}",
+ "creation": "2024-08-11 21:24:44.302245",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "config_details_section",
+  "platform",
+  "column_break_ekyx",
+  "page_id",
+  "instagram_id",
+  "users_and_flow_section",
+  "from",
+  "to",
+  "status",
+  "column_break_qtwp",
+  "flow",
+  "timestamp",
+  "message_section",
+  "message_id",
+  "message_type",
+  "reaction_emoji",
+  "reaction_text",
+  "is_edited",
+  "is_reaction",
+  "column_break_buea",
+  "message",
+  "edited_timestamp",
+  "message_reply_section",
+  "is_reply",
+  "reply_to",
+  "column_break_crym",
+  "is_quick_reply",
+  "quick_reply",
+  "attachement_section",
+  "is_attachment",
+  "attach",
+  "attachment_products",
+  "attachment_fallbacks",
+  "column_break_xurl",
+  "template",
+  "attachment_files",
+  "attachment_reels",
+  "referral_section",
+  "is_referral",
+  "source",
+  "ref",
+  "is_guest_user",
+  "ad_id",
+  "referrer_url",
+  "user_ref",
+  "ref_type",
+  "column_break_peap",
+  "ad_title",
+  "photo_url",
+  "video_url",
+  "post_id",
+  "product_id",
+  "section_break_jiip",
+  "column_break_moaj",
+  "error",
+  "column_break_dbom",
+  "reply_story_url",
+  "reply_story_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "page_id",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Page ID"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "label": "From"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "label": "To"
+  },
+  {
+   "fieldname": "flow",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Flow",
+   "options": "Incoming\nOutgoing"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Message Status",
+   "options": "Received\nPending\nSending\nSent\nDelivered\nRead\nFailed\nDeleted"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_edited",
+   "fieldtype": "Check",
+   "label": "Is Edited"
+  },
+  {
+   "fieldname": "message_type",
+   "fieldtype": "Select",
+   "label": "Message Type",
+   "options": "\ntext\nfile\nimage\nvideo\naudio\nreaction\nreel\nig_reel"
+  },
+  {
+   "fieldname": "message_id",
+   "fieldtype": "Data",
+   "label": "Message ID",
+   "length": 500
+  },
+  {
+   "default": "0",
+   "fieldname": "is_quick_reply",
+   "fieldtype": "Check",
+   "label": "Is Quick reply"
+  },
+  {
+   "fieldname": "quick_reply",
+   "fieldtype": "Data",
+   "label": "Quick Reply"
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Data",
+   "label": "Template"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "HTML Editor",
+   "label": "Message"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_referral",
+   "fieldtype": "Check",
+   "label": "Is referral"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_reply",
+   "fieldtype": "Check",
+   "label": "Is Reply"
+  },
+  {
+   "fieldname": "reply_to",
+   "fieldtype": "Data",
+   "label": "Reply To"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "column_break_dbom",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reaction_emoji",
+   "fieldtype": "Data",
+   "label": "Reaction Emoji"
+  },
+  {
+   "fieldname": "reaction_text",
+   "fieldtype": "Data",
+   "label": "Reaction Text"
+  },
+  {
+   "fieldname": "reply_story_url",
+   "fieldtype": "Data",
+   "label": "Reply story URL"
+  },
+  {
+   "fieldname": "reply_story_id",
+   "fieldtype": "Data",
+   "label": "Reply story id"
+  },
+  {
+   "fieldname": "config_details_section",
+   "fieldtype": "Section Break",
+   "label": "Config details"
+  },
+  {
+   "fieldname": "column_break_ekyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "instagram_id",
+   "fieldtype": "Data",
+   "label": "Instagram ID"
+  },
+  {
+   "fieldname": "section_break_jiip",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "users_and_flow_section",
+   "fieldtype": "Section Break",
+   "label": "Users and flow"
+  },
+  {
+   "fieldname": "column_break_qtwp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "message_section",
+   "fieldtype": "Section Break",
+   "label": "Message"
+  },
+  {
+   "fieldname": "column_break_moaj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "in_standard_filter": 1,
+   "label": "Timestamp"
+  },
+  {
+   "fieldname": "column_break_buea",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "message_reply_section",
+   "fieldtype": "Section Break",
+   "label": "Message Reply"
+  },
+  {
+   "fieldname": "column_break_crym",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachement_section",
+   "fieldtype": "Section Break",
+   "label": "Attachement"
+  },
+  {
+   "fieldname": "column_break_xurl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "error while sending message",
+   "fieldname": "error",
+   "fieldtype": "Text",
+   "label": "Error"
+  },
+  {
+   "fieldname": "edited_timestamp",
+   "fieldtype": "Datetime",
+   "label": "Edited Timestamp"
+  },
+  {
+   "fieldname": "referral_section",
+   "fieldtype": "Section Break",
+   "label": "Referral"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "source",
+   "options": "\nSHORT-URL\nSHORTLINK\nADS\nCUSTOMER_CHAT_PLUGIN\nIGME-SOURCE-LINK"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Data",
+   "label": "Ref"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_guest_user",
+   "fieldtype": "Check",
+   "label": "Is Guest user"
+  },
+  {
+   "fieldname": "ad_id",
+   "fieldtype": "Data",
+   "label": "Ad ID"
+  },
+  {
+   "fieldname": "referrer_url",
+   "fieldtype": "Data",
+   "label": "Referrer URL"
+  },
+  {
+   "fieldname": "user_ref",
+   "fieldtype": "Data",
+   "label": "User Ref"
+  },
+  {
+   "fieldname": "column_break_peap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ad_title",
+   "fieldtype": "Data",
+   "label": "Ad Title"
+  },
+  {
+   "fieldname": "photo_url",
+   "fieldtype": "Data",
+   "label": "Photo URL"
+  },
+  {
+   "fieldname": "video_url",
+   "fieldtype": "Data",
+   "label": "Video URL"
+  },
+  {
+   "fieldname": "post_id",
+   "fieldtype": "Data",
+   "label": "Post ID"
+  },
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Data",
+   "label": "Product ID"
+  },
+  {
+   "fieldname": "ref_type",
+   "fieldtype": "Select",
+   "label": "Ref Type",
+   "options": "\nOPEN_THREAD"
+  },
+  {
+   "fieldname": "attachment_products",
+   "fieldtype": "JSON",
+   "label": "Attachment Products"
+  },
+  {
+   "fieldname": "attachment_fallbacks",
+   "fieldtype": "JSON",
+   "label": "Attachment fallbacks"
+  },
+  {
+   "fieldname": "attachment_files",
+   "fieldtype": "JSON",
+   "label": "Attachment Files"
+  },
+  {
+   "fieldname": "attachment_reels",
+   "fieldtype": "JSON",
+   "label": "Attachment Reels"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_attachment",
+   "fieldtype": "Check",
+   "label": "is Attachment"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_reaction",
+   "fieldtype": "Check",
+   "label": "Is Reaction"
+  },
+  {
+   "fieldname": "platform",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Platform",
+   "options": "\nInstagram\nMessenger"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-09 10:52:52.403832",
+ "modified_by": "Administrator",
+ "module": "Messenger",
+ "name": "Messenger Message",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "from, to, message, message_type",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

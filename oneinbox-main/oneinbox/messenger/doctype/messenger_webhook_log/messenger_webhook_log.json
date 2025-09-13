@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-13 00:02:24.107334",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "event_data_section",
+  "object",
+  "timestmap",
+  "message_id",
+  "page",
+  "instagram",
+  "event_type",
+  "column_break_cmry",
+  "entry_status",
+  "processed_timestamp",
+  "error",
+  "reference_section",
+  "message",
+  "column_break_xbyj",
+  "config",
+  "section_break_eloo",
+  "event_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "event_type",
+   "fieldtype": "Select",
+   "label": "Event Type",
+   "options": "\nMessage Received\nMessage Sent\nDelivery Confirmation\nReaction Added\nReaction Removed\nRead Receipt\nMessage Edited\nQuick Reply\nAttachment Received\nReferral"
+  },
+  {
+   "fieldname": "timestmap",
+   "fieldtype": "Datetime",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Timestmap"
+  },
+  {
+   "fieldname": "processed_timestamp",
+   "fieldtype": "Datetime",
+   "label": "Processed Timestamp"
+  },
+  {
+   "fieldname": "column_break_cmry",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "message_id",
+   "fieldtype": "Data",
+   "label": "Message ID"
+  },
+  {
+   "fieldname": "error",
+   "fieldtype": "Text",
+   "label": "Error"
+  },
+  {
+   "fieldname": "section_break_eloo",
+   "fieldtype": "Section Break",
+   "label": "Event RAW"
+  },
+  {
+   "fieldname": "event_data_section",
+   "fieldtype": "Section Break",
+   "label": "Event Data"
+  },
+  {
+   "fieldname": "reference_section",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Data",
+   "label": "Message"
+  },
+  {
+   "fieldname": "column_break_xbyj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "event_data",
+   "fieldtype": "JSON",
+   "label": "Event Data"
+  },
+  {
+   "fieldname": "page",
+   "fieldtype": "Data",
+   "label": "Page"
+  },
+  {
+   "description": "e.g. page, instagram",
+   "fieldname": "object",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Object"
+  },
+  {
+   "fieldname": "instagram",
+   "fieldtype": "Data",
+   "label": "Instagram"
+  },
+  {
+   "fieldname": "config",
+   "fieldtype": "Data",
+   "label": "Config"
+  },
+  {
+   "fieldname": "entry_status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Pending\nProcessed\nFail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-27 23:57:00.461593",
+ "modified_by": "Administrator",
+ "module": "Messenger",
+ "name": "Messenger Webhook Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

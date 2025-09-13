@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-10 20:39:56.296820",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_details_section",
+  "user_id",
+  "username",
+  "platform",
+  "opted_in",
+  "full_name",
+  "gender",
+  "profile_picture_url",
+  "column_break_crbo",
+  "first_interaction_date",
+  "last_interaction_timestamp",
+  "interaction_count",
+  "first_name",
+  "last_name",
+  "follower_count",
+  "unread_message_count"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_interaction_date",
+   "fieldtype": "Date",
+   "label": "First Interaction Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "opted_in",
+   "fieldtype": "Check",
+   "label": "Opted In"
+  },
+  {
+   "fieldname": "interaction_count",
+   "fieldtype": "Int",
+   "label": "Interaction Count"
+  },
+  {
+   "fieldname": "user_details_section",
+   "fieldtype": "Section Break",
+   "label": "User Details"
+  },
+  {
+   "fieldname": "column_break_crbo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "label": "Gender"
+  },
+  {
+   "fieldname": "last_interaction_timestamp",
+   "fieldtype": "Datetime",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Last Interaction Timestamp"
+  },
+  {
+   "fieldname": "profile_picture_url",
+   "fieldtype": "Data",
+   "label": "Profile picture url",
+   "length": 500
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "User ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "platform",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Platform",
+   "options": "\nMessenger\nInstagram"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "User Name"
+  },
+  {
+   "fieldname": "follower_count",
+   "fieldtype": "Int",
+   "label": "Follower Count"
+  },
+  {
+   "fieldname": "unread_message_count",
+   "fieldtype": "Int",
+   "label": "Unread Message Count"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-09 11:07:14.985825",
+ "modified_by": "Administrator",
+ "module": "Messenger",
+ "name": "Messenger User",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

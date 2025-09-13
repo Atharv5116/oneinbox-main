@@ -1,0 +1,31 @@
+{
+  "name": "frappe-ui-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/assets/oneinbox/frontend/ && yarn copy-html-entry",
+    "copy-html-entry": "cp ../oneinbox/public/frontend/index.html ../oneinbox/www/oichat.html",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tiptap/extension-paragraph": "^2.11.2",
+    "@vueuse/core": "^12.4.0",
+    "feather-icons": "^4.28.0",
+    "frappe-ui": "^0.1.71",
+    "gemoji": "^8.1.0",
+    "lodash": "^4.17.21",
+    "pinia": "^2.3.0",
+    "socket.io-client": "^4.8.1",
+    "vue": "^3.4.12",
+    "vue-router": "^4.2.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15",
+    "vite": "^6.0.7"
+  }
+}

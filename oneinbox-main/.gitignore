@@ -1,0 +1,17 @@
+.DS_Store
+*.pyc
+*.egg-info
+*.swp
+tags
+node_modules
+__pycache__
+dist
+.vscode
+yarn.lock
+package-lock.json
+
+oneinbox/public/frontend
+oneinbox/www/oichat.html
+
+oneinbox/public/oi_frontend
+oneinbox/www/oneinbox.html
